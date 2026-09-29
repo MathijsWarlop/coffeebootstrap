@@ -205,3 +205,37 @@ h6,
   background-color: #fff;
   font-weight: 600;
 }
+
+/* ==========================================================
+   Stap 6 – Klantenbeoordelingen
+   ========================================================== */
+
+/* Ronde initialen in plaats van een profielfoto */
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--roast-cream);
+  color: var(--roast-espresso);
+  font-weight: 700;
+}
+
+[data-bs-theme="dark"] .avatar {
+  background-color: var(--roast-caramel-dark);
+  color: #fff;
+}
+
+/* ==========================================================
+   Stap 7 – Call-to-action
+   ========================================================== */
+
+/* Foto als achtergrond met een donkere laag (gradient) erover voor leesbare tekst.
+   Het pad start vanuit de map css/, daarom ../img/ */
+.cta {
+  background:
+    linear-gradient(rgba(43, 29, 22, 0.78), rgba(43, 29, 22, 0.9)),
+    url("../img/cta-cafe.jpg") center / cover no-repeat;
+}
